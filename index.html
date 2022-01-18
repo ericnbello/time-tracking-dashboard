@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <main>
+    <section class="title">
+      <h1>Time Tracking Dashboard</h1>
+    </section>
+    <!-- <section class="time-cards"> -->
+      <div class="row">
+        <div class="col" id="profile-col">
+          <div class="card" id="profile-card">
+            <div id="profile-header">
+              <img id="headshot" src="/images/image-jeremy.png">
+              <h2>
+                <span id="report-for">Report for</span>
+                <br>
+                Jeremy Robson
+              </h2>
+            </div>
+            <div id="interval-toggle">
+              <p><button id="btn-daily" onclick="toggleInterval('daily')">Daily</button></p>
+              <p><button id="btn-weekly" onclick="toggleInterval('weekly')">Weekly</button></p>
+              <p><button id="btn-monthly" onclick="toggleInterval('monthly')">Monthly</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="time-cards">
+          <div class="card" id="work-card"">
+            <div id="work-card-image">
+            </div>
+            <div class="text-area"   >
+                <div class="icon">
+                  <h2>Work</h2>
+                  <a class="card-options-menu" href="#"><img></a>
+                </div>
+      
+              <!-- daily -->
+              <h3 class="main-amount daily">5hrs</h3>
+              <!-- daily -->
+              <p class="previous daily">Previous - 7hrs</p>
+              <!-- weekly -->
+              <h3 class="main-amount weekly">32hrs</h3>
+              <!-- weekly -->
+              <p class="previous weekly">Previous - 36hrs</p>
+              <!-- monthly -->
+              <h3 class="main-amount monthly">103hrs</h3>
+              <!-- monthly -->
+              <p class="previous monthly">Previous - 128hrs</p>
+            </div>
+          </div>
+          <div class="card" id="play-card">
+            <div id="play-card-image">
+            </div>
+            <div class="text-area"   >
+              <div class="icon">
+                <h2>Play</h2>
+                <img>
+              </div>
+
+              <!-- daily -->
+              <h3 class="main-amount daily">1hr</h3>
+              <!-- daily -->
+              <p class="previous daily">Previous - 2hrs</p>
+              <!-- weekly -->
+              <h3 class="main-amount weekly">10hrs</h3>
+              <!-- weekly -->
+              <p class="previous weekly">Previous - 8hrs</p>
+              <!-- monthly -->
+              <h3 class="main-amount monthly">23hrs</h3>
+              <!-- monthly -->
+              <p class="previous monthly">Previous - 29hrs</p>
+            </div>
+          </div>
+          <div class="card" id="study-card">
+            <div id="study-card-image">
+            </div>
+            <div class="text-area"   >
+              <div class="icon">
+                <h2>Study</h2>
+                <img>
+              </div>
+
+              <!-- daily -->
+              <h3 class="main-amount daily">0hrs</h3>
+              <!-- daily -->
+              <p class="previous daily">Previous - 1hr</p>
+              <!-- weekly -->
+              <h3 class="main-amount weekly">4hrs</h3>
+              <!-- weekly -->
+              <p class="previous weekly">Previous - 7hrs</p>
+              <!-- monthly -->
+              <h3 class="main-amount monthly">13hrs</h3>
+              <!-- monthly -->
+              <p class="previous monthly">Previous - 19hrs</p>
+            </div>
+          </div>
+          <div class="card" id="exercise-card">
+            <div id="exercise-card-image">
+            </div>
+            <div class="text-area"   >
+              <div class="icon">
+                <h2>Exercise</h2>
+                <img>
+              </div>
+
+              <!-- daily -->
+              <h3 class="main-amount daily">1hr</h3>
+              <!-- daily -->
+              <p class="previous daily">Previous - 1hr</p>
+              <!-- weekly -->
+              <h3 class="main-amount weekly">4hrs</h3>
+              <!-- weekly -->
+              <p class="previous weekly">Previous - 5hrs</p>
+              <!-- monthly -->
+              <h3 class="main-amount monthly">11hrs</h3>
+              <!-- monthly -->
+              <p class="previous monthly">Previous - 18hrs</p>
+            </div>
+          </div>
+          <div class="card" id="social-card">
+            <div id="social-card-image">
+            </div>
+            <div class="text-area"   >
+              <div class="icon">
+                <h2>Social</h2>
+                <img>
+              </div>
+              <img class="icon">
+
+              <!-- daily -->
+              <h3 class="main-amount daily">1hr</h3>
+              <!-- daily -->
+              <p class="previous daily">Previous - 3hrs</p>
+              <!-- weekly -->
+              <h3 class="main-amount weekly">5hrs</h3>
+              <!-- weekly -->
+              <p class="previous weekly">Previous - 10hrs</p>
+              <!-- monthly -->
+              <h3 class="main-amount monthly">21hrs</h3>
+              <!-- monthly -->
+              <p class="previous monthly">Previous - 23hrs</p>
+            </div>
+          </div>
+          <div class="card" id="self-care-card">
+            <div id="self-care-card-image">
+            </div>
+            <div class="text-area"  onmouseuonbp="resetCard(this)">
+              <div class="icon"><h2>Self Care</h2><img></div>
+
+              <!-- daily -->
+              <h3 class="main-amount daily">0hrs</h3>
+              <!-- daily -->
+              <p class="previous daily">Previous - 1hr</p>
+              <!-- weekly -->
+              <h3 class="main-amount weekly">2hrs</h3>
+              <!-- weekly -->
+              <p class="previous weekly">Previous - 2hrs</p>
+              <!-- monthly -->
+              <h3 class="main-amount monthly">7hrs</h3>
+              <!-- monthly -->
+              <p class="previous monthly">Previous - 11hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </section> -->
+  </main>
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. </p>
+    <p> Coded by <a href="https://www.frontendmentor.io/profile/ericnbello">Eric Bello</a>.</p>
+  </footer>
+</body>
+</html>
